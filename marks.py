@@ -1,26 +1,13 @@
-a1=int(input("enter marks for ds"))
-a2=int(input("enter marks for .net"))
-a3=int(input("enter marks for c"))
-a4=int(input("enter marks for python"))
-a5=int(input("enter marks for html"))
- 
+sname=input('enter name')
+m1=int(input('enter marks of subject 1'))
+m2=int(input('enter marks of subject 2'))
+m3=int(input('enter marks of subject 3'))
+m4=int(input('enter marks of subject 4'))
+m5=int(input('enter marks of subject 5'))
+m6=int(input('enter marks of subject 6'))
+total=m1+m2+m3+m4+m5+m6
+per=total/6
+print('name',sname)
+print('total marks',total)
+print('percentage=',format(per,'.2f'),'%')
 
-m=a1+a2+a3+a4+a5
-print("total marks",m)
-
-avg=a1+a2+a3+a4+a5/5
-print("average marks:",avg)
-
-p=(a1+a2+a3+a4+a5)/5
-print("percentage:",p)
-
-if(p>=35) & (p<55):
-   print("c grade")
-elif(p>55) & (p<65):
-   print("b grade")
-elif(p>65) & (p<85):
-   print("A grade")
-elif(p>85):
-   print("o grade") 
-else:
-    print("fail")
